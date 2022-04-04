@@ -10,24 +10,6 @@ public class LoopMapExercise1 {
 
 		Scanner input = new Scanner(System.in);
 		
-//		System.out.println("Please enter Number One:");
-//		String number1 = input.netLine();
-//		
-//		System.out.println("Please enter Number Two:");
-//		String number2 = input.nextLine();
-//		
-//		System.out.println("Please enter Number Three:")
-//		String number3 = input.nextLine();	T
-//		
-//		System.out.println("Please enter Number Four:");
-//		String number4 = input.nextLine();
-//		
-//		System.out.println("Please enter Number Five:");
-//		String number5 = input.nextLine();		
-//		
-//		
-//		String fiveNumbers = number1+number2+number3+number4+number5;
-		
 		System.out.println("Enter 5 numbers, separated with enters.");
 		List<Integer> numbers = new ArrayList<>();
 		
@@ -36,26 +18,6 @@ public class LoopMapExercise1 {
 		}
 		System.out.println(numbers);
 		
-		//Find sum/product/largest/smallest of these 5
-//		int sum = 0;
-//		int product = 1; //products initialize to 1 because x*0=0
-//		int largest = numbers.get(0);
-//		int smallest = numbers.get(0);
-
-		
-		
-//		for (Integer number : numbers) {
-//			sum += number;
-//			product *= number;
-//		}
-		
-		//sum/product complete
-		
-		
-		//several ways to find max/min
-//		int largest = Collections.max(numbers);
-//		int smallest = Collections.min(numbers);
-		//loop scanning is intensive
 		
 		//Secondary:
 		int first = numbers.get(0);
@@ -76,8 +38,7 @@ public class LoopMapExercise1 {
 				smallest = current;
 			}
 		}
-		//initializes at first number (0) and goes 
-		//from there.
+
 		
 		System.out.println("Sum: "+sum);
 		System.out.println("Product: "+product);

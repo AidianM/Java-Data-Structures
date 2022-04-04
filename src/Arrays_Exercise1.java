@@ -21,9 +21,11 @@ What is the output?
 
           }
 
-          System.out.println(index);
+          System.out.println(index);*/
 
-Exc2:
+
+
+/*Exc2:
 Write a public static method called "toPower" that takes 
 in as parameters two integers called size and power. The 
 method should return an **array** of size "size" with each 
@@ -36,8 +38,43 @@ result: [0,1,4,9].
 
 //Re: with each slot in the array = its index location^power
 
-//Exc2:
+
+
 public class Arrays_Exercise1 {
+	
+	//Exc1:
+		
+	public static double sumAll(double[] exampleArray) {
+		double summation = 0;
+		
+		for (int i=0; i<exampleArray.length; i++) {
+			summation += exampleArray[i];
+		}
+		
+		return summation;
+	}
+		
+	//Exc2:
+	public static double whatIsOutput() {
+	    double[ ] examplesArray = {1,5,6,5,4,1};
+	
+	    double maximum = examplesArray[0];
+	
+	    int index = 0;
+	
+	    for (int i = 0; i<examplesArray.length; i++){
+	
+	         if (examplesArray[ i ] > maximum) {
+	
+	              maximum = examplesArray[ i ];
+	
+	              index = i;
+	         }
+	    }
+	    
+	     return maximum;
+	}	
+	//Exc3:
 				//return an array = int/double/etc
 	public static double[] toPower(int size, int power){
 		double[] returnValue = new double[size];
@@ -51,14 +88,26 @@ public class Arrays_Exercise1 {
 		return returnValue;
 	}
 	
-			public static void main(String[] args) {
-
-				double[] values = toPower(4,2);
-				//values should equal [0,1,4,9] eg [0^0, 1^1, 2^2, 3^3]
+	public static void main(String[] args) {
+		//Exc1:
+		double[] testForSum = {1, 2, 3, 4};
+		double testSummation = sumAll(testForSum);
 		
-				for (double value: values) {
-					System.out.println(value);
-				}
+		System.out.println("Summation of all values: "+testSummation);
+		
+		
+		//Exc2:
+		double maxNumber = whatIsOutput();
+		System.out.println("\nThis is the largest number in the array: "+maxNumber);
+		
+		//Exc3:
+		double[] values = toPower(4,3);
+		//values should equal [0,1,4,9] eg [0^0, 1^1, 2^2, 3^3]
+		
+		System.out.println("\ntoPower values: ");
+		for (double value: values) {
+			System.out.println(value);
+		}
 		
 		
 		
